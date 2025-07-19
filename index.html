@@ -2,40 +2,152 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TestiFy – Test it. Rate it. TestiFy</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TESTIFY – Test it. Rate it. TestiFy.</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f7f7ff;
+      color: #2b2b2b;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #6a4dfc;
+      margin: 0;
+    }
+
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 40px;
+    }
+
+    .hero-text {
+      max-width: 500px;
+      margin-right: 40px;
+    }
+
+    .hero-text h2 {
+      font-size: 2.5rem;
+      color: #6a4dfc;
+      margin-bottom: 10px;
+    }
+
+    .hero-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .hero-text ul {
+      margin-top: 20px;
+      padding-left: 20px;
+    }
+
+    .hero-text li {
+      margin-bottom: 10px;
+    }
+
+    .hero-text button {
+      margin-top: 30px;
+      padding: 12px 24px;
+      background-color: #6a4dfc;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .hero-img img {
+      max-width: 420px;
+      height: auto;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #999;
+    }
+
+    @media(max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        margin-right: 0;
+      }
+
+      .hero-img {
+        margin-top: 40px;
+      }
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>TestiFy</h1>
-    <p class="slogan">Test it. Rate it. TestiFy</p>
+    <h1>TESTIFY</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Über uns</a>
+      <a href="#">Kontakt</a>
+    </nav>
   </header>
 
-  <main>
-    <section class="about">
-      <h2>Wer wir sind</h2>
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Test it. Rate it. <strong>TESTIFY</strong></h2>
       <p>
-        Wir bei <strong>TestiFy</strong> verbinden Menschen mit den spannendsten neuen Produkten.
-        Unsere Produkttester helfen dabei, innovative digitale Angebote zu verbessern – und verdienen dabei ganz bequem von zu Hause aus Geld.
-        Kein Risiko, keine Vorkenntnisse. Einfach anmelden, testen, bewerten.
+        Wir sind TESTIFY – deine Plattform für Produkttests von digitalen Tools, Webseiten und Apps.
+        Berufstätige und Heimarbeiter testen bei uns spannende Produkte und verdienen ganz nebenbei Geld – einfach, sicher und von zu Hause aus.
       </p>
-    </section>
+      <ul>
+        <li>✔️ Digitale Produkte testen</li>
+        <li>✔️ Faire Bezahlung für jedes Feedback</li>
+        <li>✔️ Flexible Zeiteinteilung, kein Vorwissen nötig</li>
+      </ul>
+      <button onclick="window.location.href='#bewerben'">Jetzt bewerben</button>
+    </div>
+    <div class="hero-img">
+      <img src="https://cdn-icons-png.flaticon.com/512/3024/3024605.png" alt="Test Illustration">
+    </div>
+  </section>
 
-    <section class="cta">
-      <h2>Jetzt bewerben als Produkttester</h2>
-      <form action="https://dein-webhook-url-hier" method="POST">
-        <input type="text" name="name" placeholder="Vollständiger Name" required />
-        <input type="email" name="email" placeholder="E-Mail-Adresse" required />
-        <input type="text" name="wohnort" placeholder="Wohnort" />
-        <textarea name="motivation" placeholder="Warum möchtest du Produkttester:in werden?" required></textarea>
-        <button type="submit">Jetzt kostenlos bewerben</button>
-      </form>
-    </section>
-  </main>
+  <section id="bewerben" style="padding: 40px; text-align:center;">
+    <h2>Bewerbung abschicken</h2>
+    <p>Fülle das Formular aus – wir melden uns schnellstmöglich per E-Mail.</p>
+    <br>
+    <a href="https://example.com/formular-link" style="padding: 14px 30px; background:#6a4dfc; color:white; border-radius:6px; text-decoration:none; font-weight:600;">Zum Bewerbungsformular</a>
+  </section>
 
   <footer>
-    <p>&copy; 2025 TestiFy – All rights reserved.</p>
+    © 2025 TESTIFY – Gemeinsam besser testen.
   </footer>
+
 </body>
 </html>
